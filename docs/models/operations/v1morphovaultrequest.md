@@ -1,0 +1,18 @@
+# V1MorphoVaultRequest
+
+## Example Usage
+
+```typescript
+import { V1MorphoVaultRequest } from "@compass-labs/api-sdk/models/operations";
+
+let value: V1MorphoVaultRequest = {};
+```
+
+## Fields
+
+| Field                                                                                                                                          | Type                                                                                                                                           | Required                                                                                                                                       | Description                                                                                                                                    |
+| ---------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------- |
+| `chain`                                                                                                                                        | [operations.V1MorphoVaultChain](../../models/operations/v1morphovaultchain.md)                                                                 | :heavy_check_mark:                                                                                                                             | N/A                                                                                                                                            |
+| `block`                                                                                                                                        | *number*                                                                                                                                       | :heavy_minus_sign:                                                                                                                             | Optional block number (defaults to latest).                                                                                                    |
+| `vaultAddress`                                                                                                                                 | *string*                                                                                                                                       | :heavy_check_mark:                                                                                                                             | The vault address of the desired vault position.                                                                                               |
+| `userAddress`                                                                                                                                  | *string*                                                                                                                                       | :heavy_minus_sign:                                                                                                                             | The user address of the desired vault position. Only include if you would like the user position included in the response. Defaults to `None`. |

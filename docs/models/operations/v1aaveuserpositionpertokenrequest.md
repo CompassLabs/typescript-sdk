@@ -1,0 +1,18 @@
+# V1AaveUserPositionPerTokenRequest
+
+## Example Usage
+
+```typescript
+import { V1AaveUserPositionPerTokenRequest } from "@compass-labs/api-sdk/models/operations";
+
+let value: V1AaveUserPositionPerTokenRequest = {};
+```
+
+## Fields
+
+| Field                                                                                                    | Type                                                                                                     | Required                                                                                                 | Description                                                                                              | Example                                                                                                  |
+| -------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------- |
+| `chain`                                                                                                  | [operations.V1AaveUserPositionPerTokenChain](../../models/operations/v1aaveuserpositionpertokenchain.md) | :heavy_check_mark:                                                                                       | N/A                                                                                                      |                                                                                                          |
+| `block`                                                                                                  | *number*                                                                                                 | :heavy_minus_sign:                                                                                       | Optional block number (defaults to latest).                                                              |                                                                                                          |
+| `user`                                                                                                   | *string*                                                                                                 | :heavy_check_mark:                                                                                       | The user to fetch the token-specific position of.                                                        |                                                                                                          |
+| `token`                                                                                                  | *string*                                                                                                 | :heavy_check_mark:                                                                                       | The symbol or address of the asset to fetch the user's position on..                                     | USDC                                                                                                     |
